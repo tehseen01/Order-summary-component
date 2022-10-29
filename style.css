@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: top no-repeat url(./images/pattern-background-desktop.svg) hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card-body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 22rem;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow:4px 6px 15px rgba(0, 0, 0, 0.10);
+}
+
+.hero-img {
+    width: 22rem;
+}
+
+.title {
+    margin: 1rem 0;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.text-container {
+    padding: 1rem 1.8rem;
+}
+.desc {
+    color: hsl(224, 23%, 55%);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.plan-box {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.plan-box div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-box a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan-box a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.925);
+}
+
+.plan-box div b {
+    color: #000;
+    color: hsl(223, 47%, 23%);
+}
+
+.btn {
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    padding: 1rem 0;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem 0;
+    box-shadow: 2px 5px 15px rgb(56 41 224 / 30%);;
+}
+
+.btn:hover {
+    background-color: hsla(245, 75%, 52%, 0.76);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    margin: 0.5rem 0 1rem 0;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 500px) {
+    body {
+        background: repeat-x url(./images/pattern-background-mobile.svg) hsl(225, 100%, 94%);
+    }
+}
